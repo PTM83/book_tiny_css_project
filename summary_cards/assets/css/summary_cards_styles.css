@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+
+body {
+    display:grid;
+    place-items:center;
+    margin-top: 40px;
+    padding:20px;
+    background: #010101;
+}
+
+h1 {
+    font: 900 120px "Rubik", sans-serif;
+    text-transform: uppercase;
+    background: url(https://github.com/michaelgearon/Tiny-CSS-Projects/blob/main/chapter-05/after/bg-img.jpg?raw=true);
+    background-size:cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    color:white;
+}
+
+main {
+    display:grid;
+    max-width:1024px;
+    grid-gap:1rem;
+}
+
+.meeru-island {
+  background-image: url(https://github.com/michaelgearon/Tiny-CSS-Projects/blob/main/chapter-05/after/1.jpg?raw=true);
+}
+.flamingo-beech {
+  background-image: url(https://github.com/michaelgearon/Tiny-CSS-Projects/blob/main/chapter-05/after/2.jpg?raw=true);
+}
+.protur-safari {
+  background-image: url(https://github.com/michaelgearon/Tiny-CSS-Projects/blob/main/chapter-05/after/3.jpg?raw=true);
+}
+.mountain-view {
+  background-image: url(https://github.com/michaelgearon/Tiny-CSS-Projects/blob/main/chapter-05/after/4.jpg?raw=true);
+}
+
+main > section {
+    background-size:cover;
+    background-color: #3a8491;
+    border-radius: 4px;
+}
+
+main > section > div {
+    background-color: rgba(0,0,0,0.75);
+    margin:1rem;
+    padding: 1rem;
+    color: whitesmoke;
+    text-align:center;
+    font: 14px "Rubik", sans-serif;
+    /*ALL THE CARD HAVE THE SAME HEIGHT*/
+    height: calc(100% - 4rem);
+    display:grid;
+    grid-template-rows: min-content auto min-content;
+    align-items:center
+}
+
+section h2 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    font-weight: bold;
+    /*font: bold 1.3rem/1.2;*/
+    margin-bottom:0px;
+}
+
+section p {
+    font: italic 1.1225rem "Cardo", cursive;
+    line-height: 1.35;
+}
+
+a {
+    background-color: #ffa600;
+    color: rgba(0,0,0,.75);
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+    border-radius: 4px;
+    text-decoration:none;
+}
+
+a:hover {
+    background-color: #e69500
+}
+
+a:focus {
+    outline: 1px dashed #e69500;
+    outline-offset: 3px;
+}
+
+/*MEDIA QUERY*/
+@media (min-width: 700px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main > section {
+        height:350px;
+    }
+}
+
+@media (min-width:950px) {
+    main {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+/*QUERY OF MOVEMENT*/
+@media (hover:hover) and (min-width: 700px) and (prefers-reduced-motion: no-preference) {
+    main > section > div {
+        transform: translateY(calc(350px - 8rem));
+        height:5rem;
+        overflow:hidden;
+        transition: all 700ms ease-in-out;
+    }
+
+    div > *:not(h2) {
+        opacity:0;
+        transform:translateY(1rem);
+        transition: all 700ms ease-in-out;
+    }
+
+    section:hover div,
+    section:focus-within div {
+        transform: translateY(0);
+        height:calc(350px - 4rem);
+    }
+
+    section:hover div>*:not(h2),
+    section:focus-within div > *:not(h2) {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
