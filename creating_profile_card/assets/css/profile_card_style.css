@@ -1,0 +1,21 @@
+html, body {
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+}
+
+body {
+    --primary: #de3c4b;
+    --primary-contrast: white;
+    --secondary: #717777;
+    --font: Helvetica, Arial, sans-serif;
+    --text-color: #2D3142;
+    --card-background: #ffffff;
+    --technologies-background: #ffdadd;
+    --page-background: linear-gradient(#4F5D75, #2D3142);
+    --image-size: 200px;
+
+    background: var(--page-background);
+    font-family: var(--font);
+    color: var(--text-color);
+}
