@@ -82,4 +82,55 @@ dd {
 dl > div {
     flex-basis:33%;
     flex;shrink: 1;
+    display:flex;
+    flex-direction:column-reverse;
+}
+
+dt { font-size: .75 rem; }
+
+p.summary {
+    margin: 24px 0;
+    line-height: 1.5;
+}
+
+ul.technologies {
+    list-style: none;
+    padding:0;
+    margin: 24px 0;
+    display:flex;
+    justify-content: space-between;
+    gap:12px;
+    flex-wrap: wrap;
+}
+
+/*BUTTONS*/
+.actions a, .actions button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration:none;
+    border: solid 1px var(--primary);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.follow {
+    background: var(--primary);
+    color: var(--primary-contrast);
+}
+
+.message {
+    background: var(--primary-contrast);
+    color: var(--primary);
+}
+
+*:focs-visible {
+    outline: dotted 1px var(--primary);
+    outline-offset: 3px;
+}
+
+
+ul.technologies li {
+    padding: 12px 24px;
+    border-radius: 24px;
+    background: var(--technologies-background);
 }
