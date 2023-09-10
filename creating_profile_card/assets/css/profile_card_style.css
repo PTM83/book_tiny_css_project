@@ -65,3 +65,21 @@ h1 {
     font-weight:700; /*bold*/
     color: var(--secondary);
 }
+
+dl {
+    display:flex;
+    justify-content: space-around;
+    gap:12px;
+}
+
+dd {
+    margin:0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+dl > div {
+    flex-basis:33%;
+    flex;shrink: 1;
+}
