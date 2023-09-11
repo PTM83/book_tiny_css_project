@@ -1,0 +1,11 @@
+@import: url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #171717;
+    font-variant-numeric: lining-nums;
+}
+
+h1, h2 {
+    color: #2c6c69;
+}
