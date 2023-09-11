@@ -104,6 +104,13 @@ ul.technologies {
 }
 
 /*BUTTONS*/
+.actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 36px;
+}
+
 .actions a, .actions button {
     padding: 12px 24px;
     border-radius: 4px;
