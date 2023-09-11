@@ -42,3 +42,12 @@ blockquote {
     font-size: 2em;
     line-height: 1;
 }
+
+/*shape-outside, This property allows us to define a shape around
+which the adjacent text will flow.*/
+
+img.compass {
+    aspect-ratio: 1;
+    float:right;
+    shape-outside: circle(50%);
+}
