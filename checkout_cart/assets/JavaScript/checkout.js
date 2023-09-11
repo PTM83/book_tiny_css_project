@@ -37,5 +37,3 @@
     grandTotalElem.innerText = '$ ' + grandTotal.toFixed(2);
   }
 })()
-
-}
