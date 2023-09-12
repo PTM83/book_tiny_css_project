@@ -1,3 +1,46 @@
+/*DOWNLOAD FONT*/
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Italic"),
+       url("./fonts/open-sans-italic-regular.woff2") format("woff2"),
+       url("./fonts/open-sans-italic-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Open Sans";
+    src:
+      url("./fonts/open-sans-variable.woff2") format("woff2-variations");
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Open Sans";
+    src: local("Open Sans Regular"),
+         url("./fonts/open-sans-regular.woff2") format("woff2"),
+         url("./fonts/open-sans-regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Open Sans";
+    src: local("Open Sans Bold"),
+         url("./fonts/open-sans-regular.woff2") format("woff2"),
+         url("./fonts/open-sans-regular.woff") format("woff");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,15 +48,17 @@
 body {
     background: rgb(221 238 252);
     margin-top: 80px;
+    font-family: "Open Sans", sans-serif;
 }
 
-/*FULL CONTAINER*/
+/*FULL CONTAINER - EXT COLOR*/
 
 .card-item {
     max-width:430px;
     height:270px;
     margin:auto;
     position:relative;
+    color:rgb(255,20,137);
 }
 /*BACKGROUND IMAGE*/
 .card-item__side {
@@ -21,6 +66,7 @@ body {
     width: 100%;
     /*border:solid 1px black; View the border of the credit card*/
     background: url("../imgs/clau_option2.jpg") left top / cover blue;
+
 }
 
 .front {
@@ -43,6 +89,8 @@ body {
     justify-content:space-between;
     padding: 10px 15px;
     margin-bottom: 35px;
+    font-size: 27px;
+    font-weight: 700;
 }
 
 .card-item__content {
@@ -59,27 +107,57 @@ body {
 
 .card-item__band {
     height: 50px;
+    margin-top: 30px;
     background: rgb(0 0 19 / 0.8);
 }
 
 .card-item__cvv {
     text-align:right;
-    paddign: 15px;
+    padding: 15px;
 }
 
 .card-item__cvvTitle {
-    paddign-right: 10px;
+    padding-right: 10px;
     margin-bottom: 5px;
 }
 
 .card-item__cvvBand {
     height:45px;
     margin-bottom: 30px;
-    paddign-right:10px;
+    padding-right:10px;
     display:flex;
     align-items:center;
     justify-content:flex-end;
     background: rgb(255,255,255);
+    font-style:italic;
+    border-radius: 4px;
 }
 
+.car-item__holder,
+.card-item__dateTitle {
+    opacity: 0.7;
+    font-size:15px;
+}
+.card-item__name,
+.card-item__dateItem {
+    font-size: 18px;
+    font-weight: 600;
+}
+@media (hover:hover) {
+    .back{
+        position:absolute;
+        top:0;
+        left:0;
+        transform: rotateY(-180deg);
+    }
 
+    .card-item {
+        transform-style: preserve-3d;
+    }
+    .card-item__side {
+        backface-visibility: hidden;
+    }
+    .card-item:hover {
+        transform: rotateY(180deg);
+    }
+}
