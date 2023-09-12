@@ -46,3 +46,28 @@ button.destructive:hover,
 button.destructive:focus {
     outline-color: #9d1616;
 }
+
+/*TABLE*/
+table { border-collapse: collapse; }
+tr { border-top: solid 1px #aeb7b7; }
+
+th, dt  {
+    color: #3a3a3a;
+    font-weight: normal;
+    font-size:.875;
+}
+
+dt::after {
+    content: ": ";
+}
+
+tbody td:nth-of-type(2),
+ tfoot td {
+    font-weight: bold;
+}
+
+tbody tr:nth-of-type(even) {
+    background: #f2fcfc;
+}
+
+/*CARDS*/
