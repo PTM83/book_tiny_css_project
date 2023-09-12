@@ -4,6 +4,13 @@ body {
     font-family: 'Raleway', sans-serif;
     color: #171717;
     font-variant-numeric: lining-nums;
+    background: #fbffff;
+}
+
+section {
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px #aeb7b7;
 }
 
 h1, h2 {
