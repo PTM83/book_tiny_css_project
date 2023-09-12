@@ -180,3 +180,18 @@ tbody tr:nth-of-type(even) {
 }
 
 input[type="number"] { text-align:right; }
+
+/*LARGER SCREEN*/
+@media (min-width: 955px) {
+    .section-container {
+        display:flex;
+        gap: 20px;
+    }
+    section.my-cart { flex-grow:1; }
+    section.summary { flex-basis: 250px; }
+
+    main {
+        max-width:1280px;
+        margin: 0 auto;
+    }
+}
