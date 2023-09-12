@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(221 238 252);
+    margin-top: 80px;
+}
+
+/*FULL CONTAINER*/
+
+.card-item {
+    max-width:430px;
+    height:270px;
+    margin:auto;
+    position:relative;
+}
