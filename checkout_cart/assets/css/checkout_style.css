@@ -23,6 +23,7 @@ button, .button, input {
     padding: 10px;
     border: solid 1px #ddd;
     text-decoration: none;
+    display: inline-block;
 }
 
 button.primary,
@@ -77,4 +78,32 @@ tbody tr:nth-of-type(even) {
     background: #f2fcfc;
 }
 
-/*CARDS*/
+/*MOBILE LAYOUTS*/
+@media (max-width: 549px) {
+    td, tr { display: block}
+
+    table td > img {
+        float:left;
+        margin-right: 10px;
+    }
+
+    thead {
+        position:absolute;
+        left: -9999rem;
+    }
+
+    td {
+        text-align: right;
+        padding: 5px;
+    }
+    td[data-name]::before {
+        content: attr(data-name) ":";
+        float:left;
+    }
+
+    th, dt, td[data-name]::before {
+        color: #3a3a3a;
+        font-weight:normal;
+        font-size: .875rem;
+    }
+}
