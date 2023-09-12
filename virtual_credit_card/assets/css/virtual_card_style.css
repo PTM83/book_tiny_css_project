@@ -15,11 +15,12 @@ body {
     margin:auto;
     position:relative;
 }
-
+/*BACKGROUND IMAGE*/
 .card-item__side {
     height:100%;
     width: 100%;
-    border:solid 1px black; /*View the border of the credit card*/
+    /*border:solid 1px black; View the border of the credit card*/
+    background: url("../imgs/clau_option2.jpg") left top / cover blue;
 }
 
 .front {
@@ -60,3 +61,25 @@ body {
     height: 50px;
     background: rgb(0 0 19 / 0.8);
 }
+
+.card-item__cvv {
+    text-align:right;
+    paddign: 15px;
+}
+
+.card-item__cvvTitle {
+    paddign-right: 10px;
+    margin-bottom: 5px;
+}
+
+.card-item__cvvBand {
+    height:45px;
+    margin-bottom: 30px;
+    paddign-right:10px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    background: rgb(255,255,255);
+}
+
+
