@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./assets/css/virtual_card_style.css">
+
+    <title>Virtual Card</title>
+</head>
+<body>
+    <section class="card-item"> <!--Full Container-->
+
+      <!--Front of the card-->
+      <section class="card-item__side front">
+
+        <!--Front of the card top banner-->
+        <div class="card-item__wrapper">
+          <div class="card-item__top">
+            <img src="https://raw.githubusercontent.com/michaelgearon/Tiny-CSS-Projects/960311cb3deabdaecabf838cc702837e58239ae9/chapter-09/after/chip.svg" class="card-item__chip" alt="card chip">
+            <div class="card-item__type">
+              <img src="https://raw.githubusercontent.com/michaelgearon/Tiny-CSS-Projects/960311cb3deabdaecabf838cc702837e58239ae9/chapter-09/after/logo.svg" alt="Card Type" class="card-item__typeImg" height="37" width="152">
+            </div>
+          </div>
+
+          <!--Front of the card long card number-->
+          <div class="card-item__number">
+            <div>1111</div>
+            <div>2222</div>
+            <div>3333</div>
+           <div>4444</div>
+          </div>
+
+          <!--Front of the card holder name-->
+          <div class="card-item__content">
+            <div class="card-item__info">
+              <div class="card-item__holder">Card Holder</div>
+              <div class="card-item__name">John Smith</div>
+            </div>
+
+            <!--Front of the card expires date-->
+            <div class="card-item__date">
+              <div class="card-item__dateTitle">Expires</div>
+              <div class="card-item__dateItem"><span>02/22</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Back of the card-->
+      <section class="card-item__side back">
+        <!--Back of the card white band-->
+        <div class="card-item__band"></div>
+        <div class="card-item__cvv">
+          <div class="card-item__cvvTitle">CVV</div>
+          <div class="card-item__cvvBand">999</div>
+          <div class="card-item__type">
+            <img src="https://raw.githubusercontent.com/michaelgearon/Tiny-CSS-Projects/960311cb3deabdaecabf838cc702837e58239ae9/chapter-09/after/card-type.svg" class="card-item__typeImg" height="30" width="50">
+          </div>
+        </div>
+      </section>
+    </section>
+</body>
+</html>
