@@ -5,6 +5,7 @@ body {
     color: #171717;
     font-variant-numeric: lining-nums;
     background: #fbffff;
+    padding: 1rem;
 }
 
 section {
@@ -131,5 +132,12 @@ tbody tr:nth-of-type(even) {
     }
     .actions a {
         margin: 0 .25rem .5rem;
+    }
+
+    section { margin: 1rem 0; }
+
+    section h2 {
+        padding: 1rem;
+        margin: 0;
     }
 }
