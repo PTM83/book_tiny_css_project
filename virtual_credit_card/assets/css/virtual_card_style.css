@@ -49,3 +49,14 @@ body {
     justify-content:space-between;
     padding:0 15px;
 }
+
+/*BACK OF THE CREDIT CARD*/
+
+.back {
+    padding-top: 30px;
+}
+
+.card-item__band {
+    height: 50px;
+    background: rgb(0 0 19 / 0.8);
+}
