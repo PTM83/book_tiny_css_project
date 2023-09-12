@@ -106,4 +106,30 @@ tbody tr:nth-of-type(even) {
         font-weight:normal;
         font-size: .875rem;
     }
+
+    tfoot tr {
+        display:flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    tfoot th { padding:5px; }
+
+    table { width:100%; }
+
+    dl {
+        display:grid;
+        gap: .5rem;
+        grid-template-columns: auto max-content;
+        padding: 0 1rem;
+    }
+    dd { text-align:right; }
+
+    .actions {
+        padding:1rem;
+        text-align:center;
+    }
+    .actions a {
+        margin: 0 .25rem .5rem;
+    }
 }
