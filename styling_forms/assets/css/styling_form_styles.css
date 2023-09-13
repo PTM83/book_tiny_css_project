@@ -1,0 +1,85 @@
+html {
+    --color: #333333;
+    --label-color: #6d6d6d;
+    --placeholder-color: #ababab;
+    --font-family: sans-serif;
+    --background: #fafafa;
+    --background-card: #ffffff;
+    --primary: #e48b17;
+    --accent: #086788;
+    --accent-contrast: #ffffff;
+    --error: #dd1c1aff;
+    --border: #ddd;
+    --hover: #bee0eb;
+
+    color: var(--color);
+    font-family: var(--font-family);
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+    background-image: radial-gradient(var(--accent) .75px, transparent .75px)
+    background-size: 15px 15px;
+    margin: 0;
+    padding:2rem;
+}
+
+main {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem auto;
+    max-width: 1200px;
+    box-shadow: -2px 2px 15px 0 var(--border);
+}
+
+.image {
+    background-image: url('https://github.com/michaelgearon/Tiny-CSS-Projects/blob/main/chapter-10/after/img/illustration.jpeg?raw=true');
+    background-size: cover;
+    background-position: bottom center;
+    object-fit: contain;
+}
+
+.contact-form {
+    background-color: var(--background-card);
+    padding:2rem;
+}
+
+h1 { color: var(--accent); }
+
+fieldset {
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+input:not([type="radio"], [type="checkbox"]),
+ textarea, select {
+    font-size: 1rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    border-bottom: solid 1px var(--primary);
+    border-image: linear-gradient(to right, var(--primary), var(--accent)) 1;
+    padding: 0 0 .25rem;
+    width:100%;
+}
+
+textarea { resize: vertical; }
+
+input[type="radio"], input[type="checkbox"] {
+    /*accent-color:var(--accent);*/
+    appearance: none;
+    background-color: var(--background);
+    margin:0;
+    width:1.75rem;
+    height:1.75rem;
+    border: 1px solid currentcolor;
+    display: inline-grid;
+    place-content:center;
+}
+
+input[type="radio"] { border-radius: 50%; }
+input[type="checkbox"] { border-radius: 4px; }
