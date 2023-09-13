@@ -74,8 +74,8 @@ input[type="radio"], input[type="checkbox"] {
     appearance: none;
     background-color: var(--background);
     margin:0;
-    width:1.75rem;
-    height:1.75rem;
+    width:1.75em;
+    height:1.75em;
     border: 1px solid currentcolor;
     display: inline-grid;
     place-content:center;
@@ -83,3 +83,17 @@ input[type="radio"], input[type="checkbox"] {
 
 input[type="radio"] { border-radius: 50%; }
 input[type="checkbox"] { border-radius: 4px; }
+
+/*DAR FORMATO A LOS RADIO Y CHECKBOX*/
+:where(input[type="radio"], input[type="checkbox"])::before {
+    display:block;
+    content:'';
+    width: 1em;
+    height:1em;
+}
+:where(input[type="radio"], input[type="checkbox"]):hover::before {
+    background-color: var(--hover);
+}
+:where(input[type="radio"], input[type="checkbox"]):checked::before {
+    background-color: var(--accent);
+}
