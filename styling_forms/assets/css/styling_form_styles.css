@@ -91,9 +91,19 @@ input[type="checkbox"] { border-radius: 4px; }
     width: 1em;
     height:1em;
 }
+/*COLOR WHEN PASS THE MOUSE OVER THE SELECT OPTION*/
 :where(input[type="radio"], input[type="checkbox"]):hover::before {
     background-color: var(--hover);
 }
+/*COLOR WHEN YOU SELECT AN ITEM*/
 :where(input[type="radio"], input[type="checkbox"]):checked::before {
     background-color: var(--accent);
+}
+/*DAR FORMA AL RADIO BUTTON*/
+input[type="radio"]::before {
+    border-radius: 50%;
+}
+/*CREATE THE CHECKBOX MARK*/
+input[type="checkbox"]::before {
+    clip-path: polygon(14% 44%, 0% 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
