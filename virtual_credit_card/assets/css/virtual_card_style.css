@@ -68,6 +68,7 @@ body {
     background: url("../imgs/clau_option2.jpg") left top / cover blue;
     border-radius: 15px;
     box-shadow: 0 20px 60px 0 rgb(14 42 90 / 0.55);
+    margin-bottom: 2rem;
 }
 
 .front {
