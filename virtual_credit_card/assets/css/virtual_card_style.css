@@ -58,14 +58,14 @@ body {
     height:270px;
     margin:auto;
     position:relative;
-    color:rgb(255,20,137);
+    color:wblack;
 }
 /*BACKGROUND IMAGE*/
 .card-item__side {
     height:100%;
     width: 100%;
     /*border:solid 1px black; View the border of the credit card*/
-    background: url("../imgs/clau_option2.jpg") left top / cover blue;
+    background: url("../imgs/goku.jpg") left top / cover blue;
     border-radius: 15px;
     box-shadow: 0 20px 60px 0 rgb(14 42 90 / 0.55);
     margin-bottom: 2rem;
