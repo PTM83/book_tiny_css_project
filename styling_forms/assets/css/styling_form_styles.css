@@ -168,3 +168,20 @@ button[type="submit"] {
   border-image: none;
 }
 
+/*STYLING TEXT FIELDS AND DROP-DOWN MENU WHEN FOCUSED*/
+:is(
+input:not([type="radio"], [type="checkbox"]),
+textarea,
+select
+):focus-visible {
+    outline:none;
+    border-bottom:dashed 1px var(--primary);
+    border-image:none;
+}
+
+:is(
+input:not([type="radio"], [type="checkbox"]).dirty:invalid,
+textarea.dirty:invalid
+):focus-visible {
+    border-color: var(--error);
+}
