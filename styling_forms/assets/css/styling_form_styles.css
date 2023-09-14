@@ -141,3 +141,30 @@ button[type="submit"] {
 }
 
 .actions { margin-top: 2rem; }
+
+/*ERROR MESSAGE*/
+.error {
+    color: var(--error);
+    margin: .25rem 0 2rem;
+}
+
+.error span::before {
+    content: url('https://raw.githubusercontent.com/michaelgearon/Tiny-CSS-Projects/fab82200683e77a1d69d45a5f3671796ec42df82/chapter-10/after/img/error.svg');
+    display: inline-block;
+    width:1.25ex;
+    height:1.25ex;
+    vertical-align: baseline;
+    margin-right: .5ch;
+}
+
+.error span { display: none; }
+
+.dirty:invalid + .error span {
+  display: inline;
+}
+
+:is(input, textarea).dirty:invalid {
+  border-color: var(--error);
+  border-image: none;
+}
+
