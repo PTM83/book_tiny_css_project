@@ -128,3 +128,16 @@ label, legend {
     color: var(--placeholder-color);
     font-size: 0.75rem;
 }
+
+/*BUTTONS SEND*/
+button[type="submit"] {
+    border:none;
+    border-radius: 36px;
+    background: var(--accent);
+    color: var(--accent-contrast);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: .5rem 2rem;
+}
+
+.actions { margin-top: 2rem; }
